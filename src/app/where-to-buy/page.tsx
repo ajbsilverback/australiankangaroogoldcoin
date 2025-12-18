@@ -3,24 +3,24 @@ import Link from "next/link";
 import { SITE_CONFIG } from "@/lib/siteConfig";
 
 export const metadata: Metadata = {
-  title: "Where to Buy American Gold Buffalo Coins | Independent Dealer Guide",
+  title: "Where to Buy Australian Kangaroo Gold Coins | Independent Dealer Guide",
   description:
-    "Independent guide to buying American Gold Buffalo coins from online dealers, local coin shops, the U.S. Mint, and authorized distributors. No endorsements. Educational information only.",
+    "Independent guide to buying Australian Kangaroo Gold coins from online dealers, local coin shops, and authorized distributors. No endorsements. Educational information only.",
   alternates: {
     canonical: `${SITE_CONFIG.canonicalDomain}/where-to-buy`,
   },
   openGraph: {
-    title: "Where to Buy American Gold Buffalo Coins | Independent Dealer Guide",
+    title: "Where to Buy Australian Kangaroo Gold Coins | Independent Dealer Guide",
     description:
-      "Independent guide to buying American Gold Buffalo coins from online dealers, local coin shops, and authorized sources. Educational information only.",
+      "Independent guide to buying Australian Kangaroo Gold coins from online dealers, local coin shops, and authorized sources. Educational information only.",
     url: `${SITE_CONFIG.domain}/where-to-buy`,
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Where to Buy American Gold Buffalo Coins | Independent Dealer Guide",
+    title: "Where to Buy Australian Kangaroo Gold Coins | Independent Dealer Guide",
     description:
-      "Independent guide to buying American Gold Buffalo coins from online dealers, local coin shops, and authorized sources.",
+      "Independent guide to buying Australian Kangaroo Gold coins from online dealers, local coin shops, and authorized sources.",
   },
 };
 
@@ -29,55 +29,55 @@ const onlineDealers = [
   {
     name: "Monex",
     description:
-      "A precious metals dealer providing live market data and American Gold Buffalo coins alongside other gold products.",
-    url: "https://www.monex.com/american-buffalo-gold-coins-for-sale/",
+      "A precious metals dealer providing live market data and Australian Kangaroo Gold coins alongside other gold products.",
+    url: "https://www.monex.com/gold-australian-kangaroo-nugget/",
   },
   {
     name: "JM Bullion",
     description:
-      "An established online precious metals dealer offering American Gold Buffalo coins, Gold Eagles, and other government-minted bullion.",
+      "An established online precious metals dealer offering Australian Kangaroo Gold coins, Gold Eagles, and other government-minted bullion.",
     url: "https://www.jmbullion.com/",
   },
   {
     name: "APMEX",
     description:
-      "One of the largest online bullion retailers with a wide selection of American Gold Buffalo coins in various conditions.",
+      "One of the largest online bullion retailers with a wide selection of Australian Kangaroo Gold coins in various years.",
     url: "https://www.apmex.com/",
   },
   {
     name: "SD Bullion",
     description:
-      "An online dealer known for competitive pricing on Gold Buffalo coins and other U.S. Mint bullion products.",
+      "An online dealer known for competitive pricing on Gold Kangaroo coins and other Perth Mint bullion products.",
     url: "https://sdbullion.com/",
   },
   {
     name: "Goldline",
     description:
-      "A precious metals dealer offering Gold Buffalo coins with personalized service and market insights.",
+      "A precious metals dealer offering Gold Kangaroo coins with personalized service and market insights.",
     url: "https://www.goldline.com/",
   },
   {
     name: "GovMint",
     description:
-      "A collectible coins and precious metals dealer specializing in government-issued bullion including Gold Buffalo coins.",
+      "A collectible coins and precious metals dealer specializing in government-issued bullion including Gold Kangaroo coins.",
     url: "https://www.govmint.com/",
   },
   {
     name: "Bullion Exchanges",
     description:
-      "A New York-based bullion dealer offering American Gold Buffalo coins with multiple payment options.",
+      "A New York-based bullion dealer offering Australian Kangaroo Gold coins with multiple payment options.",
     url: "https://bullionexchanges.com/",
   },
   {
     name: "Provident Metals",
     description:
-      "An online bullion dealer offering competitive prices on Gold Buffalo coins and other government bullion.",
+      "An online bullion dealer offering competitive prices on Gold Kangaroo coins and other government bullion.",
     url: "https://www.providentmetals.com/",
   },
   {
     name: "Money Metals Exchange",
     description:
-      "A precious metals dealer offering Gold Buffalo coins with price transparency and educational content.",
+      "A precious metals dealer offering Gold Kangaroo coins with price transparency and educational content.",
     url: "https://www.moneymetals.com/",
   },
 ];
@@ -86,9 +86,9 @@ export default function WhereToBuyPage() {
   const webPageSchema = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    name: "Where to Buy American Gold Buffalo Coins | Independent Buying Guide",
+    name: "Where to Buy Australian Kangaroo Gold Coins | Independent Buying Guide",
     description:
-      "Learn where to buy American Gold Buffalo coins online and locally, including major dealers, local coin shops, and authorized distributors.",
+      "Learn where to buy Australian Kangaroo Gold coins online and locally, including major dealers, local coin shops, and authorized distributors.",
     url: `${SITE_CONFIG.domain}/where-to-buy`,
     publisher: {
       "@type": "Organization",
@@ -100,9 +100,9 @@ export default function WhereToBuyPage() {
   const itemListSchema = {
     "@context": "https://schema.org",
     "@type": "ItemList",
-    name: "Where to buy American Gold Buffalo coins",
+    name: "Where to buy Australian Kangaroo Gold coins",
     description:
-      "Types of vendors and platforms for purchasing American Gold Buffalo coins",
+      "Types of vendors and platforms for purchasing Australian Kangaroo Gold coins",
     itemListElement: [
       {
         "@type": "ListItem",
@@ -112,7 +112,7 @@ export default function WhereToBuyPage() {
       {
         "@type": "ListItem",
         position: 2,
-        name: "U.S. Mint Authorized Purchasers",
+        name: "Perth Mint Authorized Distributors",
       },
       {
         "@type": "ListItem",
@@ -145,11 +145,11 @@ export default function WhereToBuyPage() {
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold mb-6">
               <span className="gold-text">Where to Buy</span>
               <br />
-              <span className="text-white">American Gold Buffalo Coins</span>
+              <span className="text-white">Australian Kangaroo Gold Coins</span>
             </h1>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto mb-6">
               An independent educational guide to understanding your options
-              for purchasing American Gold Buffalo coins from various authorized sources.
+              for purchasing Australian Kangaroo Gold coins from various authorized sources.
             </p>
             <div className="bg-bullion-gold/5 border border-bullion-gold/20 rounded-xl p-6 max-w-2xl mx-auto">
               <p className="text-gray-400 text-sm">
@@ -180,7 +180,7 @@ export default function WhereToBuyPage() {
                 <p className="text-gray-400 text-sm">
                   Research dealer history, customer reviews, and industry
                   accreditations. Look for established businesses with
-                  transparent track records and U.S. Mint authorized status.
+                  transparent track records and Perth Mint authorized status.
                 </p>
               </div>
               <div className="card p-6">
@@ -192,7 +192,7 @@ export default function WhereToBuyPage() {
                 </h3>
                 <p className="text-gray-400 text-sm">
                   Compare premiums over spot price across multiple dealers.
-                  Gold Buffalo coins typically carry 3-5% premiums over spot
+                  Gold Kangaroo coins typically carry 2-4% premiums over spot
                   for standard bullion coins.
                 </p>
               </div>
@@ -205,7 +205,7 @@ export default function WhereToBuyPage() {
                 </h3>
                 <p className="text-gray-400 text-sm">
                   Understand shipping costs, delivery times, and insurance
-                  coverage. For Gold Buffalo coins, fully insured and discreet
+                  coverage. For Gold Kangaroo coins, fully insured and discreet
                   shipping is essential for protection.
                 </p>
               </div>
@@ -217,7 +217,7 @@ export default function WhereToBuyPage() {
                   Buyback Policies
                 </h3>
                 <p className="text-gray-400 text-sm">
-                  Check whether the dealer offers buyback programs. Gold Buffalo
+                  Check whether the dealer offers buyback programs. Gold Kangaroo
                   coins have excellent liquidity, and reputable dealers maintain
                   competitive buyback prices.
                 </p>
@@ -230,7 +230,7 @@ export default function WhereToBuyPage() {
                   Authenticity Guarantee
                 </h3>
                 <p className="text-gray-400 text-sm">
-                  Ensure dealers guarantee authenticity. Gold Buffalo coins from
+                  Ensure dealers guarantee authenticity. Gold Kangaroo coins from
                   reputable dealers should come with verification and return
                   policies if authenticity concerns arise.
                 </p>
@@ -251,41 +251,41 @@ export default function WhereToBuyPage() {
             </div>
           </section>
 
-          {/* U.S. Mint & Authorized Purchasers */}
+          {/* Perth Mint & Authorized Distributors */}
           <section>
             <h2 className="text-3xl md:text-4xl font-display font-bold mb-4 text-center">
-              <span className="gold-text">U.S. Mint</span> & Authorized Sources
+              <span className="gold-text">Perth Mint</span> & Authorized Sources
             </h2>
             <div className="card p-8 max-w-3xl mx-auto">
               <p className="text-gray-300 mb-6">
-                The American Gold Buffalo is minted exclusively by the U.S. Mint. 
-                While the Mint sells directly to the public for proof coins, 
-                bullion coins are distributed through Authorized Purchasers.
+                The Australian Kangaroo Gold coin is minted exclusively by the Perth Mint. 
+                The Perth Mint sells directly to the public through its website and 
+                also distributes through a network of authorized dealers worldwide.
               </p>
               <div className="bg-bullion-gold/5 border border-bullion-gold/20 rounded-lg p-4 mb-6">
                 <h3 className="text-lg font-semibold text-white mb-2">
                   Understanding the Distribution Chain
                 </h3>
                 <p className="text-gray-400 text-sm">
-                  The U.S. Mint sells bullion Gold Buffalo coins to a network of 
-                  <strong className="text-white"> Authorized Purchasers</strong>, large 
-                  dealers who meet Mint requirements. These Authorized Purchasers 
-                  then sell to smaller dealers and the public. This is why you 
-                  purchase from dealers rather than directly from the Mint.
+                  The Perth Mint sells Gold Kangaroo coins directly and through a network of 
+                  <strong className="text-white"> Authorized Distributors</strong>, large 
+                  dealers who meet Perth Mint requirements. These distributors 
+                  then sell to smaller dealers and the public. U.S. investors typically 
+                  purchase from dealers rather than directly from Perth Mint.
                 </p>
               </div>
               <div className="space-y-3">
                 <span className="text-gray-300">
                   Visit{" "}
                   <a
-                    href="https://www.usmint.gov/"
+                    href="https://www.perthmint.com/"
                     target="_blank"
                     rel="nofollow noopener noreferrer"
                     className="text-bullion-gold hover:underline"
                   >
-                    usmint.gov
+                    perthmint.com
                   </a>{" "}
-                  for official American Buffalo program information.
+                  for official Australian Kangaroo program information.
                 </span>
               </div>
             </div>
@@ -297,7 +297,7 @@ export default function WhereToBuyPage() {
               <span className="gold-text">Online</span> Bullion Dealers
             </h2>
             <p className="text-gray-400 text-center mb-8 max-w-2xl mx-auto">
-              Major online dealers offer competitive pricing on American Gold Buffalo 
+              Major online dealers offer competitive pricing on Australian Kangaroo Gold 
               coins with convenient shipping. We encourage you to compare prices
               across multiple sources before purchasing.
             </p>
@@ -346,15 +346,15 @@ export default function WhereToBuyPage() {
             </h2>
             <div className="card p-8 max-w-3xl mx-auto">
               <p className="text-gray-300 mb-6">
-                Local coin shops and bullion dealers commonly stock American Gold 
-                Buffalo coins, offering convenient face-to-face transactions:
+                Local coin shops and bullion dealers commonly stock Australian Kangaroo 
+                Gold coins, offering convenient face-to-face transactions:
               </p>
               <ul className="space-y-4 mb-6">
                 <li className="flex items-start gap-3">
                   <span className="text-bullion-gold mt-1">•</span>
                   <span className="text-gray-400">
                     <strong className="text-white">Immediate possession:</strong>{" "}
-                    Walk out with your Gold Buffalo the same day, no shipping delays.
+                    Walk out with your Gold Kangaroo the same day, no shipping delays.
                   </span>
                 </li>
                 <li className="flex items-start gap-3">
@@ -384,7 +384,7 @@ export default function WhereToBuyPage() {
                 <p className="text-gray-500 text-sm">
                   <strong className="text-gray-400">Finding local dealers:</strong>{" "}
                   Search for &ldquo;coin shop near me&rdquo; or &ldquo;gold dealer&rdquo;
-                  in your area. Call ahead to confirm Gold Buffalo availability and pricing.
+                  in your area. Call ahead to confirm Gold Kangaroo availability and pricing.
                 </p>
               </div>
             </div>
@@ -398,7 +398,7 @@ export default function WhereToBuyPage() {
             <div className="card p-8 max-w-3xl mx-auto">
               <p className="text-gray-300 mb-6">
                 For IRA purchases, you&apos;ll work with a specialized custodian 
-                who handles the regulatory requirements. American Gold Buffalo 
+                who handles the regulatory requirements. Australian Kangaroo Gold 
                 coins are IRS-approved for Precious Metals IRAs.
               </p>
               <div className="bg-bullion-gold/5 border border-bullion-gold/20 rounded-lg p-4 mb-6">
@@ -406,7 +406,7 @@ export default function WhereToBuyPage() {
                   IRA Eligibility Requirements
                 </h3>
                 <p className="text-gray-400 text-sm">
-                  The American Gold Buffalo meets IRS requirements for IRAs due to 
+                  The Australian Kangaroo Gold coin meets IRS requirements for IRAs due to 
                   its .9999 fine purity (exceeding the .995 minimum) and its status 
                   as a government-minted coin. Coins must be held by an approved 
                   custodian in an approved depository.
@@ -459,17 +459,17 @@ export default function WhereToBuyPage() {
               <ul className="space-y-3">
                 <li>
                   <a
-                    href="https://www.monex.com/gold-american-buffalo-price-charts/"
+                    href="https://www.monex.com/gold-australian-kangaroo-nugget-price-charts/"
                     target="_blank"
                     rel="noopener noreferrer nofollow"
                     className="inline-flex items-center text-bullion-gold hover:text-bullion-goldLight transition-colors"
                   >
-                    <span>Monex Gold Buffalo pricing</span>
+                    <span>Monex Gold Kangaroo pricing</span>
                     <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                     </svg>
                   </a>
-                  <span className="text-gray-500 text-sm ml-2">· Prices provided by Monex</span>
+                  <span className="text-gray-500 text-sm ml-2">- Prices provided by Monex</span>
                 </li>
                 <li>
                   <span className="text-gray-400">Cross-check prices at{" "}
@@ -529,4 +529,3 @@ export default function WhereToBuyPage() {
     </>
   );
 }
-

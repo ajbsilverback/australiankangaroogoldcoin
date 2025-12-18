@@ -4,24 +4,24 @@ import Link from "next/link";
 import { SITE_CONFIG } from "@/lib/siteConfig";
 
 export const metadata: Metadata = {
-  title: "Gold Buffalo Design & History | James Earle Fraser's Iconic Design",
+  title: "Gold Kangaroo Design & History | Perth Mint's Iconic Australian Coin",
   description:
-    "Explore the history and design of the American Gold Buffalo coin: James Earle Fraser's iconic 1913 Buffalo Nickel design, the Native American portrait, and what the design signals to gold investors.",
+    "Explore the history and design of the Australian Kangaroo Gold coin: Perth Mint heritage, the evolution from Gold Nugget to Kangaroo, and what the design signals to gold investors.",
   alternates: {
     canonical: `${SITE_CONFIG.canonicalDomain}/design-history`,
   },
   openGraph: {
-    title: "Gold Buffalo Design & History | James Earle Fraser's Iconic Design",
+    title: "Gold Kangaroo Design & History | Perth Mint's Iconic Australian Coin",
     description:
-      "The story behind the American Gold Buffalo: James Earle Fraser's 1913 design, cultural significance, and what the iconic imagery means for modern gold investors.",
+      "The story behind the Australian Kangaroo Gold coin: Perth Mint heritage, design evolution, and what the iconic imagery means for modern gold investors.",
     url: `${SITE_CONFIG.domain}/design-history`,
     type: "website",
   },
   twitter: {
     card: "summary",
-    title: "Gold Buffalo Design & History",
+    title: "Gold Kangaroo Design & History",
     description:
-      "The story behind America's purest gold coin: James Earle Fraser's iconic 1913 design brought to 24-karat gold.",
+      "The story behind Australia's premier gold bullion coin: Perth Mint heritage and the iconic kangaroo design.",
   },
 };
 
@@ -29,9 +29,9 @@ export default function DesignHistoryPage() {
   const webPageSchema = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    name: "American Gold Buffalo Design & History",
+    name: "Australian Gold Kangaroo Design & History",
     description:
-      "The history and design origins of the American Gold Buffalo coin, featuring James Earle Fraser's iconic 1913 Buffalo Nickel artwork.",
+      "The history and design origins of the Australian Kangaroo Gold coin, featuring Perth Mint heritage and the iconic kangaroo design.",
     url: `${SITE_CONFIG.domain}/design-history`,
     publisher: {
       "@type": "Organization",
@@ -55,218 +55,262 @@ export default function DesignHistoryPage() {
               Design <span className="gold-text">&amp; History</span>
             </h1>
             <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-              The story behind America&apos;s most iconic gold coin, from the 1913 Buffalo Nickel to the modern .9999 fine bullion program.
+              The story behind Australia&apos;s iconic gold bullion coin, from the 1986 Gold Nugget to the modern Kangaroo series.
             </p>
           </div>
 
-          {/* James Earle Fraser Section - Editorial Pairing: Image Left, Text Right */}
-          <section className="card p-6 md:p-8 mb-10">
-            <div className="grid md:grid-cols-12 gap-8 items-center">
-              {/* Image Column */}
-              <div className="md:col-span-4 flex justify-center items-center">
-                <div className="relative w-full max-w-[240px] aspect-[3/4]">
-                  <Image
-                    src="/James_Earle_Fraser.jpg"
-                    alt="James Earle Fraser, sculptor and coin designer"
-                    fill
-                    className="object-cover rounded-lg"
-                    sizes="(max-width: 768px) 240px, 240px"
-                  />
+          {/* 3-Card Image Showcase */}
+          <section className="mb-16">
+            <div className="grid md:grid-cols-3 gap-6">
+              {/* Card 1: Designer Portrait */}
+              <div className="card p-6 flex flex-col">
+                <h3 className="text-lg font-display font-semibold text-bullion-gold mb-4 text-center">
+                  The Designer
+                </h3>
+                <div className="relative w-full aspect-square rounded-lg overflow-hidden bg-gradient-to-br from-bullion-gold/5 to-transparent flex items-center justify-center">
+                  <div className="relative w-[85%] h-[85%]">
+                    <Image
+                      src="/Dr. Stuart Devlin AO CMG.jpg"
+                      alt="Dr. Stuart Devlin AO CMG, designer of the original Gold Kangaroo"
+                      fill
+                      className="object-contain"
+                      sizes="(max-width: 768px) 280px, 300px"
+                      priority
+                    />
+                  </div>
                 </div>
+                <p className="text-gray-400 text-sm text-center mt-4">
+                  <strong className="text-white">Dr. Stuart Devlin AO CMG</strong>
+                  <br />
+                  Created the original kangaroo motif and Australian decimal coinage
+                </p>
               </div>
-              {/* Text Column */}
-              <div className="md:col-span-8">
-                <h2 className="text-2xl font-display font-semibold text-white mb-4">
-                  James Earle Fraser: The Artist Behind the Design
-                </h2>
-                <p className="text-gray-300 leading-relaxed mb-4">
-                  James Earle Fraser (1876–1953) was one of America&apos;s most celebrated sculptors. Born in Winona, Minnesota, Fraser grew up in the Dakota Territory during the final years of the American frontier, an experience that profoundly influenced his artistic vision.
+
+              {/* Card 2: Obverse Image */}
+              <div className="card p-6 flex flex-col">
+                <h3 className="text-lg font-display font-semibold text-bullion-gold mb-4 text-center">
+                  Obverse
+                </h3>
+                <div className="relative w-full aspect-square rounded-lg overflow-hidden bg-gradient-to-br from-bullion-gold/5 to-transparent flex items-center justify-center">
+                  <div className="relative w-[85%] h-[85%]">
+                    <Image
+                      src="/gold-australian-kangaroo-obverse.png"
+                      alt="Australian Gold Kangaroo obverse showing monarch portrait"
+                      fill
+                      className="object-contain"
+                      sizes="(max-width: 768px) 280px, 300px"
+                      priority
+                    />
+                  </div>
+                </div>
+                <p className="text-gray-400 text-sm text-center mt-4">
+                  <strong className="text-white">Monarch Portrait</strong>
+                  <br />
+                  King Charles III (or Queen Elizabeth II on earlier coins)
                 </p>
-                <p className="text-gray-300 leading-relaxed mb-4">
-                  Fraser studied at the{" "}
-                  <a
-                    href="https://www.artic.edu/"
-                    target="_blank"
-                    rel="nofollow noopener noreferrer"
-                    className="text-bullion-gold hover:underline"
-                  >
-                    Art Institute of Chicago
-                  </a>{" "}
-                  and the{" "}
-                  <a
-                    href="https://en.wikipedia.org/wiki/%C3%89cole_des_Beaux-Arts"
-                    target="_blank"
-                    rel="nofollow noopener noreferrer"
-                    className="text-bullion-gold hover:underline"
-                  >
-                    École des Beaux-Arts
-                  </a>{" "}
-                  in Paris. He became known for monumental works including &ldquo;End of the Trail,&rdquo; a poignant sculpture depicting a weary Native American on horseback that became one of the most reproduced images in American art.
-                </p>
-                <p className="text-gray-300 leading-relaxed">
-                  In 1911, the U.S. Mint commissioned Fraser to design a new five-cent piece. The result, the Buffalo Nickel (also known as the Indian Head Nickel), entered circulation in 1913 and became one of the most beloved coin designs in American numismatic history.
+              </div>
+
+              {/* Card 3: Reverse Image */}
+              <div className="card p-6 flex flex-col">
+                <h3 className="text-lg font-display font-semibold text-bullion-gold mb-4 text-center">
+                  Reverse
+                </h3>
+                <div className="relative w-full aspect-square rounded-lg overflow-hidden bg-gradient-to-br from-bullion-gold/5 to-transparent flex items-center justify-center">
+                  <div className="relative w-[85%] h-[85%]">
+                    <Image
+                      src="/gold-australian-kangaroo-reverse.png"
+                      alt="Australian Gold Kangaroo reverse showing kangaroo design"
+                      fill
+                      className="object-contain"
+                      sizes="(max-width: 768px) 280px, 300px"
+                      priority
+                    />
+                  </div>
+                </div>
+                <p className="text-gray-400 text-sm text-center mt-4">
+                  <strong className="text-white">Kangaroo</strong>
+                  <br />
+                  Iconic Australian symbol, design changes annually
                 </p>
               </div>
             </div>
           </section>
 
-          {/* Obverse Design - Editorial Pairing: Text Left, Image Right */}
-          <section className="card p-6 md:p-8 mb-10 bg-bullion-gold/5 border-bullion-gold/30">
+          {/* Perth Mint Section */}
+          <section className="card p-6 md:p-8 mb-10">
             <div className="grid md:grid-cols-12 gap-8 items-center">
-              {/* Text Column */}
-              <div className="md:col-span-7 order-2 md:order-1">
+              <div className="md:col-span-5 flex justify-center">
+                <div className="relative w-full max-w-xs aspect-[4/3] rounded-xl overflow-hidden bg-gradient-to-br from-bullion-gold/10 to-transparent flex items-center justify-center">
+                  <div className="relative w-[95%] h-[95%]">
+                    <Image
+                      src="/perth-mint-building.jpg"
+                      alt="Perth Mint building in Western Australia"
+                      fill
+                      className="object-cover rounded-lg"
+                      sizes="(max-width: 768px) 280px, 320px"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div className="md:col-span-7">
                 <h2 className="text-2xl font-display font-semibold text-white mb-4">
-                  Obverse: The Native American Portrait
+                  The Perth Mint: A Legacy of Excellence
                 </h2>
                 <p className="text-gray-300 leading-relaxed mb-4">
-                  The obverse (front) of the Gold Buffalo features a composite portrait of a Native American in profile, facing right. Fraser stated that he used three Native American models as inspiration:
+                  The Perth Mint, established in 1899, is one of the world&apos;s most respected precious metals refiners and coin producers. Originally opened as a branch of Britain&apos;s Royal Mint to refine gold from Western Australia&apos;s rich goldfields, it has evolved into a global leader in bullion production.
+                </p>
+                <p className="text-gray-300 leading-relaxed mb-4">
+                  Today, the Perth Mint is wholly owned by the Government of Western Australia and operates as one of the largest refineries in the Southern Hemisphere. Its products are recognized worldwide for their quality, purity, and innovative designs.
+                </p>
+                <p className="text-gray-300 leading-relaxed">
+                  The Perth Mint&apos;s commitment to excellence is backed by the Western Australian government guarantee, providing investors with confidence in the authenticity and purity of every coin produced.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          {/* Origin Story - Gold Nugget */}
+          <section className="card p-6 md:p-8 mb-10 bg-bullion-gold/5 border-bullion-gold/30">
+            <h2 className="text-2xl font-display font-semibold text-white mb-4">
+              Origins: The Australian Gold Nugget (1986-1989)
+            </h2>
+            <p className="text-gray-300 leading-relaxed mb-4">
+              The Australian gold bullion program launched in 1986 as the &ldquo;Australian Gold Nugget&rdquo; series. These early coins featured images of famous Australian gold nuggets on the reverse, celebrating Australia&apos;s rich gold mining heritage.
+            </p>
+            <ul className="space-y-3 text-gray-300 mb-4">
+              <li className="flex items-start gap-3">
+                <span className="text-bullion-gold">•</span>
+                <span><strong className="text-white">1986</strong>: Launch year featuring the Welcome Stranger, Hand of Faith, and other famous nuggets</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-bullion-gold">•</span>
+                <span><strong className="text-white">.9999 purity</strong>: From the start, Perth Mint committed to 24-karat gold</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-bullion-gold">•</span>
+                <span><strong className="text-white">Multiple sizes</strong>: Available in 1 oz, 1/2 oz, 1/4 oz, 1/10 oz, and 1/20 oz</span>
+              </li>
+            </ul>
+            <p className="text-gray-300 leading-relaxed">
+              The Gold Nugget design, while historically significant, faced recognition challenges in international markets. This led to a pivotal decision that would transform the series.
+            </p>
+          </section>
+
+          {/* Kangaroo Design Evolution */}
+          <section className="card p-6 md:p-8 mb-10">
+            <h2 className="text-2xl font-display font-semibold text-white mb-4">
+              The Kangaroo Design: 1989 to Present
+            </h2>
+            <p className="text-gray-300 leading-relaxed mb-4">
+              In 1989, the Perth Mint made a strategic decision to replace the gold nugget imagery with the iconic Australian kangaroo. This change dramatically improved the coin&apos;s recognition and appeal in global markets.
+            </p>
+            <p className="text-gray-300 leading-relaxed mb-4">
+              The kangaroo is one of Australia&apos;s most recognizable national symbols, instantly identifying the coin&apos;s origin to collectors and investors worldwide. Unlike many bullion coins with static designs, the Kangaroo features a new design each year.
+            </p>
+            <div className="bg-white/5 rounded-lg p-4 mb-4">
+              <p className="text-gray-300 italic">
+                &ldquo;The kangaroo design transformed our bullion program from a regional product to a globally recognized investment coin.&rdquo;
+              </p>
+              <p className="text-gray-500 text-sm mt-2">- Perth Mint Historical Records</p>
+            </div>
+            <p className="text-gray-300 leading-relaxed">
+              This annual design change adds collectible appeal to the coin&apos;s investment value, making certain years more sought after by collectors while maintaining strong demand among bullion investors.
+            </p>
+          </section>
+
+          {/* Obverse Design */}
+          <section className="card p-6 md:p-8 mb-10">
+            <div className="grid md:grid-cols-12 gap-8 items-center">
+              <div className="md:col-span-5 flex justify-center">
+                <div className="relative w-56 h-56 md:w-72 md:h-72 rounded-xl overflow-hidden bg-gradient-to-br from-bullion-gold/10 to-transparent flex items-center justify-center">
+                  <div className="relative w-[90%] h-[90%]">
+                    <Image
+                      src="/gold-australian-kangaroo-obverse.png"
+                      alt="Australian Gold Kangaroo obverse showing monarch portrait"
+                      fill
+                      className="object-contain"
+                      sizes="(max-width: 768px) 224px, 288px"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div className="md:col-span-7">
+                <h2 className="text-2xl font-display font-semibold text-white mb-4">
+                  Obverse: The Monarch&apos;s Portrait
+                </h2>
+                <p className="text-gray-300 leading-relaxed mb-4">
+                  The obverse (front) of the Australian Kangaroo Gold coin features the portrait of the reigning British/Australian monarch, establishing the coin&apos;s status as official legal tender.
                 </p>
                 <ul className="space-y-3 text-gray-300 mb-4">
                   <li className="flex items-start gap-3">
                     <span className="text-bullion-gold">•</span>
-                    <span><strong className="text-white">Iron Tail</strong>, an Oglala Lakota chief who participated in Buffalo Bill&apos;s Wild West show</span>
+                    <span><strong className="text-white">1986-2022</strong>: Queen Elizabeth II effigy by various artists over the years</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="text-bullion-gold">•</span>
-                    <span><strong className="text-white">Two Moons</strong>, a Northern Cheyenne chief who fought at the Battle of Little Bighorn</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="text-bullion-gold">•</span>
-                    <span><strong className="text-white">John Big Tree</strong>, an Onondaga/Seneca actor (though some historians debate his involvement)</span>
+                    <span><strong className="text-white">2023-present</strong>: King Charles III effigy</span>
                   </li>
                 </ul>
                 <p className="text-gray-300 leading-relaxed">
-                  The portrait captures a dignified, timeless quality that Fraser intended as a tribute to indigenous peoples. The word &ldquo;LIBERTY&rdquo; appears above the portrait, with the year of minting below.
+                  The monarch&apos;s portrait includes inscriptions of the face value ($100 AUD), the weight (1 oz), and the purity (.9999 gold). This design element confirms the coin&apos;s government backing and legal tender status.
                 </p>
-              </div>
-              {/* Image Column */}
-              <div className="md:col-span-5 flex justify-center items-center order-1 md:order-2">
-                <div className="relative w-full max-w-[320px] aspect-square">
-                  <Image
-                    src="/american-gold-buffalo-obverse.png"
-                    alt="American Gold Buffalo obverse"
-                    fill
-                    className="object-contain"
-                    sizes="(max-width: 768px) 320px, 320px"
-                  />
-                </div>
               </div>
             </div>
           </section>
 
-          {/* Reverse Design - Editorial Pairing: Image Left, Text Right */}
-          <section className="card p-6 md:p-8 mb-10">
+          {/* Reverse Design */}
+          <section className="card p-6 md:p-8 mb-10 bg-bullion-gold/5 border-bullion-gold/30">
             <div className="grid md:grid-cols-12 gap-8 items-center">
-              {/* Image Column */}
-              <div className="md:col-span-5 flex justify-center items-center">
-                <div className="relative w-full max-w-[320px] aspect-square">
-                  <Image
-                    src="/american-gold-buffalo-reverse.png"
-                    alt="American Gold Buffalo reverse"
-                    fill
-                    className="object-contain"
-                    sizes="(max-width: 768px) 320px, 320px"
-                  />
+              <div className="md:col-span-5 flex justify-center">
+                <div className="relative w-56 h-56 md:w-72 md:h-72 rounded-xl overflow-hidden bg-gradient-to-br from-bullion-gold/10 to-transparent flex items-center justify-center">
+                  <div className="relative w-[90%] h-[90%]">
+                    <Image
+                      src="/gold-australian-kangaroo-reverse.png"
+                      alt="Australian Gold Kangaroo reverse showing kangaroo design"
+                      fill
+                      className="object-contain"
+                      sizes="(max-width: 768px) 224px, 288px"
+                    />
+                  </div>
                 </div>
               </div>
-              {/* Text Column */}
               <div className="md:col-span-7">
                 <h2 className="text-2xl font-display font-semibold text-white mb-4">
-                  Reverse: Black Diamond the Buffalo
+                  Reverse: The Kangaroo Design
                 </h2>
                 <p className="text-gray-300 leading-relaxed mb-4">
-                  The reverse (back) features an American bison standing on a mound of earth. Fraser reportedly used &ldquo;Black Diamond,&rdquo; a bison residing at the{" "}
-                  <a
-                    href="https://centralparkzoo.com/"
-                    target="_blank"
-                    rel="nofollow noopener noreferrer"
-                    className="text-bullion-gold hover:underline"
-                  >
-                    Central Park Zoo
-                  </a>{" "}
-                  in New York City, as his primary model.
+                  The reverse features a kangaroo design that changes annually. Perth Mint artists create new depictions each year, showing kangaroos in various poses and settings that celebrate Australian wildlife.
                 </p>
                 <p className="text-gray-300 leading-relaxed mb-4">
-                  The bison, often called a buffalo in American vernacular, represents the American frontier and the natural heritage of the Great Plains. The animal stands in a powerful, grounded stance that conveys strength and permanence.
+                  Common design themes include:
                 </p>
+                <ul className="space-y-3 text-gray-300 mb-4">
+                  <li className="flex items-start gap-3">
+                    <span className="text-bullion-gold">•</span>
+                    <span><strong className="text-white">Bounding kangaroos</strong>: Dynamic poses showing the animal in motion</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-bullion-gold">•</span>
+                    <span><strong className="text-white">Kangaroo pairs</strong>: Mother and joey, or multiple kangaroos</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-bullion-gold">•</span>
+                    <span><strong className="text-white">Outback settings</strong>: Australian landscapes and vegetation</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-bullion-gold">•</span>
+                    <span><strong className="text-white">Detailed artistry</strong>: High-relief details showcasing Perth Mint craftsmanship</span>
+                  </li>
+                </ul>
                 <p className="text-gray-300 leading-relaxed">
-                  Inscriptions include &ldquo;UNITED STATES OF AMERICA,&rdquo; &ldquo;E PLURIBUS UNUM,&rdquo; &ldquo;IN GOD WE TRUST,&rdquo; and the face value of &ldquo;$50.&rdquo; The purity &ldquo;.9999 FINE GOLD&rdquo; and weight &ldquo;1 OZ.&rdquo; also appear on the reverse.
+                  Inscriptions on the reverse typically include &ldquo;AUSTRALIAN KANGAROO&rdquo; and the year of mintage, along with the Perth Mint&apos;s &ldquo;P&rdquo; mintmark.
                 </p>
               </div>
             </div>
           </section>
 
-          {/* Historical Context */}
+          {/* What Design Signals to Investors */}
           <section className="card p-6 md:p-8 mb-10">
-            <h2 className="text-2xl font-display font-semibold text-white mb-4">
-              Cultural &amp; Historical Backdrop
-            </h2>
-            <p className="text-gray-300 leading-relaxed mb-4">
-              Fraser created the original Buffalo Nickel design during a period of reflection on America&apos;s westward expansion. By the early 1900s, the frontier era had ended, Native American populations had been decimated, and the American bison had been brought to the brink of extinction.
-            </p>
-            <p className="text-gray-300 leading-relaxed mb-4">
-              The design was Fraser&apos;s deliberate tribute to a vanishing America. He later wrote: &ldquo;My purpose was to create a coin which would be truly American, one that could not be confused with the coinage of any other country.&rdquo;
-            </p>
-            <div className="bg-white/5 rounded-lg p-4 mb-4">
-              <p className="text-gray-300 italic">
-                &ldquo;I did not intend the Indian to represent any one individual, but rather a type that I hoped embodied the genuine American character of the original Americans.&rdquo;
-              </p>
-              <p className="text-gray-500 text-sm mt-2">— James Earle Fraser</p>
-            </div>
-            <p className="text-gray-300 leading-relaxed">
-              The Buffalo Nickel circulated from 1913 to 1938, and its imagery became deeply embedded in American culture. When the U.S. Mint sought a design for its first 24-karat gold bullion coin in 2006, Fraser&apos;s century-old artwork was the natural choice.
-            </p>
-          </section>
-
-          {/* Modern Bullion Program */}
-          <section className="card p-6 md:p-8 mb-10">
-            <h2 className="text-2xl font-display font-semibold text-white mb-4">
-              The Modern Bullion Program
-            </h2>
-            <p className="text-gray-300 leading-relaxed mb-4">
-              The American Gold Buffalo was authorized by the Presidential $1 Coin Act of 2005 and first minted in 2006. It was created to compete with other .9999 fine gold coins, particularly the Canadian Gold Maple Leaf.
-            </p>
-            <div className="grid md:grid-cols-2 gap-4 mb-4">
-              <div className="bg-white/5 rounded-lg p-4">
-                <h3 className="text-bullion-gold font-semibold mb-2">2006 Launch</h3>
-                <p className="text-gray-400 text-sm">
-                  First .9999 fine gold coin produced by the U.S. Mint, meeting demand for a pure 24-karat American gold coin.
-                </p>
-              </div>
-              <div className="bg-white/5 rounded-lg p-4">
-                <h3 className="text-bullion-gold font-semibold mb-2">Bullion &amp; Proof</h3>
-                <p className="text-gray-400 text-sm">
-                  Available in both bullion (investment) and proof (collector) versions, each year featuring the classic Fraser design.
-                </p>
-              </div>
-              <div className="bg-white/5 rounded-lg p-4">
-                <h3 className="text-bullion-gold font-semibold mb-2">West Point Mint</h3>
-                <p className="text-gray-400 text-sm">
-                  Gold Buffalos are struck at the West Point Mint in New York, one of the U.S. Mint&apos;s four production facilities.
-                </p>
-              </div>
-              <div className="bg-white/5 rounded-lg p-4">
-                <h3 className="text-bullion-gold font-semibold mb-2">Ongoing Production</h3>
-                <p className="text-gray-400 text-sm">
-                  Minted annually since 2006, the Gold Buffalo has become a cornerstone of the U.S. Mint&apos;s bullion program.
-                </p>
-              </div>
-            </div>
-            <p className="text-gray-400 text-sm">
-              Learn more about the Gold Buffalo&apos;s history at{" "}
-              <a
-                href="https://www.monex.com/knowledge/historical-backdrop-gold-buffalo-coin-iconic-design/"
-                target="_blank"
-                rel="nofollow noopener noreferrer"
-                className="text-bullion-gold hover:underline"
-              >
-                Monex Knowledge Base
-              </a>
-            </p>
-          </section>
-
-          {/* What the Design Signals */}
-          <section className="card p-6 md:p-8 mb-10 bg-bullion-gold/5 border-bullion-gold/30">
             <h2 className="text-2xl font-display font-semibold text-white mb-4">
               What the Design Signals to Investors
             </h2>
@@ -275,118 +319,123 @@ export default function DesignHistoryPage() {
             </p>
             <div className="space-y-4">
               <div className="border-l-2 border-bullion-gold/50 pl-4">
-                <h3 className="text-white font-semibold">American Heritage</h3>
+                <h3 className="text-white font-semibold">Global Recognition</h3>
                 <p className="text-gray-400 text-sm">
-                  The iconic imagery connects to over a century of American numismatic tradition. Investors recognize the design instantly, a factor that supports liquidity and trust.
+                  The kangaroo is instantly recognizable worldwide, facilitating transactions across borders and markets. Dealers everywhere know and accept this coin.
                 </p>
               </div>
               <div className="border-l-2 border-bullion-gold/50 pl-4">
                 <h3 className="text-white font-semibold">Government Authority</h3>
                 <p className="text-gray-400 text-sm">
-                  The design&apos;s official U.S. Mint provenance signals authenticity and weight/purity guarantees backed by the federal government.
+                  The monarch&apos;s effigy and legal tender status signal authenticity and weight/purity guarantees backed by the Australian government.
                 </p>
               </div>
               <div className="border-l-2 border-bullion-gold/50 pl-4">
-                <h3 className="text-white font-semibold">Timeless Value</h3>
+                <h3 className="text-white font-semibold">Annual Variety</h3>
                 <p className="text-gray-400 text-sm">
-                  Fraser&apos;s 1913 design has endured for over a century. Its continued use on modern bullion suggests permanence, a quality investors seek in store-of-value assets.
+                  The changing design each year adds collectible appeal, potentially supporting resale values for specific years while maintaining strong bullion demand.
                 </p>
               </div>
               <div className="border-l-2 border-bullion-gold/50 pl-4">
-                <h3 className="text-white font-semibold">Global Recognition</h3>
+                <h3 className="text-white font-semibold">Quality Assurance</h3>
                 <p className="text-gray-400 text-sm">
-                  The Buffalo design is recognized by dealers and investors worldwide, facilitating transactions across borders and markets.
+                  Perth Mint&apos;s reputation for excellence means each coin meets exacting standards for weight, purity, and finish.
                 </p>
               </div>
               <div className="border-l-2 border-bullion-gold/50 pl-4">
-                <h3 className="text-white font-semibold">Collector Crossover</h3>
+                <h3 className="text-white font-semibold">Strong Liquidity</h3>
                 <p className="text-gray-400 text-sm">
-                  The design&apos;s artistic merit appeals to both bullion investors and numismatists, potentially broadening the buyer pool when selling.
+                  The Kangaroo&apos;s widespread recognition supports competitive bid-ask spreads and ready markets when selling.
                 </p>
               </div>
             </div>
           </section>
 
-          {/* Design Comparison */}
+          {/* Comparison with Other Coins */}
           <section className="card p-6 md:p-8 mb-10">
             <h2 className="text-2xl font-display font-semibold text-white mb-4">
-              Buffalo vs. Eagle: Design Philosophy
+              Kangaroo vs. Other Gold Coins: Design Philosophy
             </h2>
             <p className="text-gray-300 leading-relaxed mb-4">
-              The U.S. Mint produces two gold bullion coins with distinct design philosophies:
+              Different mints take different approaches to bullion coin design:
             </p>
             <div className="grid md:grid-cols-2 gap-6">
               <div className="bg-white/5 rounded-lg p-5">
-                <h3 className="text-bullion-gold font-semibold mb-3">Gold Buffalo</h3>
+                <h3 className="text-bullion-gold font-semibold mb-3">Gold Kangaroo</h3>
                 <ul className="space-y-2 text-gray-400 text-sm">
-                  <li>• Historical 1913 design by James Earle Fraser</li>
-                  <li>• Native American and bison imagery</li>
-                  <li>• Celebrates American frontier heritage</li>
-                  <li>• Artistic, collectible aesthetic</li>
-                  <li>• Single consistent design since 2006</li>
+                  <li>- Annual design changes</li>
+                  <li>- Dynamic kangaroo imagery</li>
+                  <li>- Celebrates Australian wildlife</li>
+                  <li>- Collectible + investment appeal</li>
+                  <li>- Perth Mint since 1986</li>
+                </ul>
+              </div>
+              <div className="bg-white/5 rounded-lg p-5">
+                <h3 className="text-bullion-gold font-semibold mb-3">Maple Leaf</h3>
+                <ul className="space-y-2 text-gray-400 text-sm">
+                  <li>- Consistent maple leaf design</li>
+                  <li>- Canadian national symbol</li>
+                  <li>- Focus on purity and security</li>
+                  <li>- Micro-engraved security features</li>
+                  <li>- Royal Canadian Mint since 1979</li>
                 </ul>
               </div>
               <div className="bg-white/5 rounded-lg p-5">
                 <h3 className="text-bullion-gold font-semibold mb-3">Gold Eagle</h3>
                 <ul className="space-y-2 text-gray-400 text-sm">
-                  <li>• Augustus Saint-Gaudens&apos; 1907 Liberty design</li>
-                  <li>• Lady Liberty and eagle family imagery</li>
-                  <li>• Symbolizes freedom and national ideals</li>
-                  <li>• Classic patriotic aesthetic</li>
-                  <li>• Reverse redesigned in 2021</li>
+                  <li>- Classic Liberty design</li>
+                  <li>- Eagle family on reverse</li>
+                  <li>- American patriotic imagery</li>
+                  <li>- 22-karat alloy for durability</li>
+                  <li>- U.S. Mint since 1986</li>
+                </ul>
+              </div>
+              <div className="bg-white/5 rounded-lg p-5">
+                <h3 className="text-bullion-gold font-semibold mb-3">Krugerrand</h3>
+                <ul className="space-y-2 text-gray-400 text-sm">
+                  <li>- Paul Kruger portrait</li>
+                  <li>- Springbok antelope reverse</li>
+                  <li>- First modern bullion coin</li>
+                  <li>- 22-karat alloy</li>
+                  <li>- South African Mint since 1967</li>
                 </ul>
               </div>
             </div>
-            <p className="text-gray-400 text-sm mt-4">
-              Compare Buffalo and Eagle coins in detail at{" "}
-              <a
-                href="https://www.monex.com/knowledge/gold-buffalo-coins-vs-american-eagle-gold-coins/"
-                target="_blank"
-                rel="nofollow noopener noreferrer"
-                className="text-bullion-gold hover:underline"
-              >
-                Monex: Buffalo vs. Eagle
-              </a>
-            </p>
           </section>
 
           {/* Timeline */}
           <section className="card p-6 md:p-8 mb-10">
             <h2 className="text-2xl font-display font-semibold text-white mb-6">
-              Key Dates in Buffalo Design History
+              Key Dates in Kangaroo Design History
             </h2>
             <div className="space-y-4">
               <div className="flex gap-4">
-                <div className="text-bullion-gold font-bold w-20 flex-shrink-0">1876</div>
-                <p className="text-gray-300">James Earle Fraser born in Winona, Minnesota</p>
+                <div className="text-bullion-gold font-bold w-20 flex-shrink-0">1899</div>
+                <p className="text-gray-300">Perth Mint established as branch of Royal Mint</p>
               </div>
               <div className="flex gap-4">
-                <div className="text-bullion-gold font-bold w-20 flex-shrink-0">1911</div>
-                <p className="text-gray-300">Fraser commissioned to design new five-cent coin</p>
+                <div className="text-bullion-gold font-bold w-20 flex-shrink-0">1986</div>
+                <p className="text-gray-300">Australian Gold Nugget series launches</p>
               </div>
               <div className="flex gap-4">
-                <div className="text-bullion-gold font-bold w-20 flex-shrink-0">1913</div>
-                <p className="text-gray-300">Buffalo Nickel enters circulation</p>
+                <div className="text-bullion-gold font-bold w-20 flex-shrink-0">1989</div>
+                <p className="text-gray-300">Kangaroo design replaces gold nugget imagery</p>
               </div>
               <div className="flex gap-4">
-                <div className="text-bullion-gold font-bold w-20 flex-shrink-0">1938</div>
-                <p className="text-gray-300">Buffalo Nickel production ends (replaced by Jefferson Nickel)</p>
+                <div className="text-bullion-gold font-bold w-20 flex-shrink-0">1990s</div>
+                <p className="text-gray-300">Annual design changes become signature feature</p>
               </div>
               <div className="flex gap-4">
-                <div className="text-bullion-gold font-bold w-20 flex-shrink-0">1953</div>
-                <p className="text-gray-300">James Earle Fraser passes away</p>
+                <div className="text-bullion-gold font-bold w-20 flex-shrink-0">2008</div>
+                <p className="text-gray-300">Series officially renamed &ldquo;Australian Kangaroo&rdquo;</p>
               </div>
               <div className="flex gap-4">
-                <div className="text-bullion-gold font-bold w-20 flex-shrink-0">2005</div>
-                <p className="text-gray-300">Presidential $1 Coin Act authorizes Gold Buffalo program</p>
-              </div>
-              <div className="flex gap-4">
-                <div className="text-bullion-gold font-bold w-20 flex-shrink-0">2006</div>
-                <p className="text-gray-300">First American Gold Buffalo coins minted</p>
+                <div className="text-bullion-gold font-bold w-20 flex-shrink-0">2023</div>
+                <p className="text-gray-300">King Charles III effigy debuts on obverse</p>
               </div>
               <div className="flex gap-4">
                 <div className="text-bullion-gold font-bold w-20 flex-shrink-0">Today</div>
-                <p className="text-gray-300">Gold Buffalo remains U.S. Mint&apos;s premier 24-karat bullion coin</p>
+                <p className="text-gray-300">Gold Kangaroo remains one of world&apos;s most traded bullion coins</p>
               </div>
             </div>
           </section>

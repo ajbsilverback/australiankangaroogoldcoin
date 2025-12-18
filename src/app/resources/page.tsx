@@ -7,24 +7,24 @@ import { resourcesQA } from "@/data/qa-content";
 import { fetchProductSpot } from "@/lib/monexSpot";
 
 export const metadata: Metadata = {
-  title: "American Gold Buffalo Educational Resources & Investment Guides",
+  title: "Australian Gold Kangaroo Educational Resources & Investment Guides",
   description:
-    "In-depth educational guides on American Gold Buffalo coins covering premiums, coin comparisons, storage options, IRA eligibility, market dynamics, and portfolio allocation strategies.",
+    "In-depth educational guides on Australian Kangaroo Gold coins covering premiums, coin comparisons, storage options, IRA eligibility, market dynamics, and portfolio allocation strategies.",
   alternates: {
     canonical: `${SITE_CONFIG.canonicalDomain}/resources`,
   },
   openGraph: {
-    title: "American Gold Buffalo Educational Resources & Investment Guides",
+    title: "Australian Gold Kangaroo Educational Resources & Investment Guides",
     description:
-      "In-depth educational guides on American Gold Buffalo coins covering premiums, storage, coin comparisons, and portfolio strategies.",
+      "In-depth educational guides on Australian Kangaroo Gold coins covering premiums, storage, coin comparisons, and portfolio strategies.",
     url: `${SITE_CONFIG.domain}/resources`,
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "American Gold Buffalo Educational Resources & Investment Guides",
+    title: "Australian Gold Kangaroo Educational Resources & Investment Guides",
     description:
-      "In-depth educational guides on Gold Buffalo coins covering premiums, storage, and investment strategies.",
+      "In-depth educational guides on Gold Kangaroo coins covering premiums, storage, and investment strategies.",
   },
 };
 
@@ -52,9 +52,9 @@ export default async function ResourcesPage({ searchParams }: PageProps) {
   const webPageSchema = {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
-    name: "American Gold Buffalo Resources & Educational Guides",
+    name: "Australian Gold Kangaroo Resources & Educational Guides",
     description:
-      "Comprehensive educational resources about American Gold Buffalo coins covering premiums, comparisons, storage, and investment strategies.",
+      "Comprehensive educational resources about Australian Kangaroo Gold coins covering premiums, comparisons, storage, and investment strategies.",
     url: `${SITE_CONFIG.domain}/resources`,
     publisher: {
       "@type": "Organization",
@@ -132,7 +132,7 @@ export default async function ResourcesPage({ searchParams }: PageProps) {
             </h1>
 
             <p className="text-xl text-gray-300 leading-relaxed mt-6">
-              Deepen your understanding of American Gold Buffalo coins and the 
+              Deepen your understanding of Australian Kangaroo Gold coins and the 
               broader gold market with our comprehensive guides. Whether you&apos;re 
               comparing coins, understanding premiums, or planning storage, our 
               resources provide the insights you need. Check{" "}
@@ -145,7 +145,7 @@ export default async function ResourcesPage({ searchParams }: PageProps) {
               </Link>
               , or return to our{" "}
               <Link href="/" className="text-bullion-gold hover:underline">
-                Gold Buffalo overview
+                Gold Kangaroo overview
               </Link>.
             </p>
           </div>
@@ -272,7 +272,7 @@ export default async function ResourcesPage({ searchParams }: PageProps) {
           <p className="text-gray-400 mb-6">
             View live{" "}
             <Link href="/live-gold-prices" className="text-bullion-gold hover:underline">
-              Gold Buffalo pricing and market data
+              Gold Kangaroo pricing and market data
             </Link>{" "}
             to inform your investment decisions.
           </p>

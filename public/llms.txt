@@ -1,47 +1,47 @@
-# AmericanBuffaloGoldCoin.com - LLMs.txt
+# AustralianKangarooGoldCoin.com - LLMs.txt
 
-> An independent educational resource about American Gold Buffalo coins
+> An independent educational resource about Australian Kangaroo Gold coins
 
 ## Site Overview
 
-AmericanBuffaloGoldCoin.com provides educational content about American Gold Buffalo coins—America's first 24-karat gold bullion coin minted by the U.S. Mint with .9999 fine purity.
+AustralianKangarooGoldCoin.com provides educational content about Australian Kangaroo Gold coins, one of the world's most recognized 24-karat gold bullion coins minted by the Perth Mint with .9999 fine purity.
 
 ## What This Site Is
 
 - Independent educational resource
-- Information about American Gold Buffalo coins
+- Information about Australian Kangaroo Gold coins
 - Live gold pricing data from Monex API
 - Educational articles about gold coin investing
 
 ## What This Site Is NOT
 
 - Not a dealer (we do not sell precious metals)
-- Not affiliated with Monex, the U.S. Mint, or any dealers
+- Not affiliated with Monex, the Perth Mint, or any dealers
 - Not financial advisors (no investment advice)
 - No endorsements of dealers or services
 
 ## Key Topics Covered
 
-- American Gold Buffalo coin specifications (.9999 fine, 1 oz, $50 face value)
-- Gold Buffalo vs Gold Eagle vs Maple Leaf comparisons
+- Australian Kangaroo Gold coin specifications (.9999 fine, 1 oz, $100 AUD face value)
+- Kangaroo vs Gold Eagle vs Maple Leaf comparisons
 - Premium and pricing dynamics
-- IRA eligibility for Gold Buffalo coins
+- IRA eligibility for Kangaroo Gold coins
 - Storage and authentication
 - Market dynamics affecting gold prices
 
 ## Product Focus
 
-The American Gold Buffalo is:
+The Australian Kangaroo Gold coin is:
 - 24-karat gold (.9999 fine purity)
 - 1 troy ounce of pure gold
-- U.S. legal tender with $50 face value
-- First minted in 2006
+- Australian legal tender with $100 AUD face value
+- First minted in 1986 (originally as the Gold Nugget)
 - IRA-eligible
-- Features James Earle Fraser's Buffalo Nickel design
+- Features a new kangaroo design each year
 
 ## Pricing Data
 
-- Product pricing uses Monex API symbol: AB (American Buffalo)
+- Product pricing uses Monex API symbol: NG (Australian Kangaroo/Nugget)
 - Spot pricing uses Monex API symbol: GBXSPOT
 - Prices fetched fresh on page load only
 - No real-time updates or polling
@@ -50,13 +50,15 @@ The American Gold Buffalo is:
 
 - Home: /
 - Gold Prices: /live-gold-prices
+- Coin Specs: /coin-specs
+- Design & History: /design-history
 - Where to Buy: /where-to-buy
 - Resources: /resources
 - About: /about
 
 ## Contact
 
-Website: https://www.americanbuffalogoldcoin.com
+Website: https://www.australiankangaroogoldcoin.com
 
 ## Disclaimer
 

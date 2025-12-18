@@ -40,7 +40,7 @@ export interface ProductSpotSummary {
 
 /**
  * Fetches the current product spot price from Monex API
- * Uses symbol from SITE_CONFIG.productSymbol (AB = American Buffalo)
+ * Uses symbol from SITE_CONFIG.productSymbol (NG = Australian Kangaroo)
  * 
  * Uses cache: 'no-store' to ensure:
  * - Data is fetched fresh on each page load ONLY

@@ -3,24 +3,24 @@ import Link from "next/link";
 import { SITE_CONFIG } from "@/lib/siteConfig";
 
 export const metadata: Metadata = {
-  title: "American Gold Buffalo Coin Specifications | Technical Details & Investor Facts",
+  title: "Australian Gold Kangaroo Coin Specifications | Technical Details & Investor Facts",
   description:
-    "Complete technical specifications for the 1 oz American Gold Buffalo coin: .9999 fine purity, weight, dimensions, legal tender status, IRA eligibility, and premium factors.",
+    "Complete technical specifications for the 1 oz Australian Kangaroo Gold coin: .9999 fine purity, weight, dimensions, legal tender status, IRA eligibility, and premium factors.",
   alternates: {
     canonical: `${SITE_CONFIG.canonicalDomain}/coin-specs`,
   },
   openGraph: {
-    title: "American Gold Buffalo Coin Specifications | Technical Details",
+    title: "Australian Gold Kangaroo Coin Specifications | Technical Details",
     description:
-      "Complete technical specifications for the 1 oz American Gold Buffalo: .9999 purity, 1 troy oz weight, U.S. Mint legal tender status, and IRA eligibility.",
+      "Complete technical specifications for the 1 oz Australian Kangaroo Gold coin: .9999 purity, 1 troy oz weight, Perth Mint legal tender status, and IRA eligibility.",
     url: `${SITE_CONFIG.domain}/coin-specs`,
     type: "website",
   },
   twitter: {
     card: "summary",
-    title: "American Gold Buffalo Coin Specifications",
+    title: "Australian Gold Kangaroo Coin Specifications",
     description:
-      "Complete technical specifications for the 1 oz American Gold Buffalo: .9999 purity, 1 troy oz weight, and IRA eligibility.",
+      "Complete technical specifications for the 1 oz Australian Kangaroo Gold coin: .9999 purity, 1 troy oz weight, and IRA eligibility.",
   },
 };
 
@@ -28,50 +28,50 @@ const specsData = [
   { label: "Purity", value: ".9999 fine gold (24-karat)", highlight: true },
   { label: "Gold Content", value: "1.0000 troy ounce (31.1035 grams)" },
   { label: "Gross Weight", value: "1.0001 troy ounce (31.1080 grams)" },
-  { label: "Diameter", value: "32.70 mm (1.287 inches)" },
-  { label: "Thickness", value: "2.95 mm (0.116 inches)" },
-  { label: "Face Value", value: "$50 USD (legal tender)" },
-  { label: "Mint", value: "United States Mint" },
-  { label: "First Minted", value: "2006" },
+  { label: "Diameter", value: "32.60 mm (1.283 inches)" },
+  { label: "Thickness", value: "2.65 mm (0.104 inches)" },
+  { label: "Face Value", value: "$100 AUD (legal tender)" },
+  { label: "Mint", value: "Perth Mint" },
+  { label: "First Minted", value: "1986 (as Gold Nugget)" },
   { label: "Edge", value: "Reeded" },
   { label: "IRA Eligible", value: "Yes", highlight: true },
 ];
 
 const faqData = [
   {
-    question: "What is the purity of the American Gold Buffalo?",
+    question: "What is the purity of the Australian Gold Kangaroo?",
     answer:
-      "The American Gold Buffalo is .9999 fine gold, meaning it contains 99.99% pure gold (24-karat). This makes it the purest gold coin produced by the U.S. Mint and one of the purest gold bullion coins available worldwide.",
+      "The Australian Gold Kangaroo is .9999 fine gold, meaning it contains 99.99% pure gold (24-karat). This makes it one of the purest gold bullion coins available worldwide, matching the purity of the Canadian Maple Leaf.",
   },
   {
-    question: "How much gold is in a 1 oz Gold Buffalo?",
+    question: "How much gold is in a 1 oz Gold Kangaroo?",
     answer:
-      "Each 1 oz American Gold Buffalo contains exactly 1.0000 troy ounce (31.1035 grams) of pure gold. Because of the .9999 purity, virtually all of the coin's weight is gold content.",
+      "Each 1 oz Australian Kangaroo Gold coin contains exactly 1.0000 troy ounce (31.1035 grams) of pure gold. Because of the .9999 purity, virtually all of the coin's weight is gold content.",
   },
   {
-    question: "Is the Gold Buffalo legal tender?",
+    question: "Is the Gold Kangaroo legal tender?",
     answer:
-      "Yes, the American Gold Buffalo carries a $50 face value and is official U.S. legal tender, backed by the United States government. However, its gold content is worth significantly more than the face value.",
+      "Yes, the Australian Kangaroo Gold coin carries a $100 AUD face value and is official Australian legal tender, backed by the Australian government. However, its gold content is worth significantly more than the face value.",
   },
   {
-    question: "Can I hold Gold Buffalo coins in an IRA?",
+    question: "Can I hold Gold Kangaroo coins in an IRA?",
     answer:
-      "Yes, American Gold Buffalo coins meet IRS requirements for inclusion in a Precious Metals IRA (also called a Gold IRA). The .9999 purity exceeds the IRS minimum fineness requirement of .995 for gold. You'll need a qualified custodian and approved depository to hold IRA-owned coins.",
+      "Yes, Australian Kangaroo Gold coins meet IRS requirements for inclusion in a Precious Metals IRA (also called a Gold IRA). The .9999 purity exceeds the IRS minimum fineness requirement of .995 for gold. You'll need a qualified custodian and approved depository to hold IRA-owned coins.",
   },
   {
-    question: "Why does the Gold Buffalo have a premium over spot price?",
+    question: "Why does the Gold Kangaroo have a premium over spot price?",
     answer:
-      "Premiums reflect minting costs, dealer margins, and supply/demand dynamics. The Gold Buffalo's premium accounts for U.S. Mint production costs, distribution, the coin's legal tender status, and its recognition as a trusted government-minted product. Premiums vary based on market conditions.",
+      "Premiums reflect minting costs, dealer margins, and supply/demand dynamics. The Gold Kangaroo's premium accounts for Perth Mint production costs, distribution, the coin's legal tender status, and its recognition as a trusted government-minted product. Premiums vary based on market conditions.",
   },
   {
-    question: "How does the Gold Buffalo compare to the Gold Eagle in purity?",
+    question: "How does the Gold Kangaroo compare to the Gold Eagle in purity?",
     answer:
-      "The Gold Buffalo is .9999 fine (24-karat pure gold), while the Gold Eagle is .9167 fine (22-karat). Both coins contain 1 troy ounce of gold, but the Eagle is alloyed with copper and silver for durability, making it slightly heavier overall. Investors choose based on preference for purity versus durability.",
+      "The Gold Kangaroo is .9999 fine (24-karat pure gold), while the Gold Eagle is .9167 fine (22-karat). Both coins contain 1 troy ounce of gold, but the Eagle is alloyed with copper and silver for durability, making it slightly heavier overall. Investors choose based on preference for purity versus durability.",
   },
   {
-    question: "What affects Gold Buffalo premiums?",
+    question: "What affects Gold Kangaroo premiums?",
     answer:
-      "Key premium drivers include: mint production capacity, dealer inventory levels, overall demand for physical gold, the coin's recognition and liquidity, and broader precious metals market conditions. During high demand periods, premiums typically increase.",
+      "Key premium drivers include: Perth Mint production capacity, dealer inventory levels, overall demand for physical gold, the coin's recognition and liquidity, and broader precious metals market conditions. During high demand periods, premiums typically increase.",
   },
 ];
 
@@ -79,9 +79,9 @@ export default function CoinSpecsPage() {
   const webPageSchema = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    name: "American Gold Buffalo Coin Specifications",
+    name: "Australian Gold Kangaroo Coin Specifications",
     description:
-      "Complete technical specifications and investor facts for the 1 oz American Gold Buffalo coin.",
+      "Complete technical specifications and investor facts for the 1 oz Australian Kangaroo Gold coin.",
     url: `${SITE_CONFIG.domain}/coin-specs`,
     publisher: {
       "@type": "Organization",
@@ -119,10 +119,10 @@ export default function CoinSpecsPage() {
           {/* Header */}
           <div className="text-center mb-12">
             <h1 className="text-4xl md:text-5xl font-display font-bold mb-4">
-              <span className="gold-text">Gold Buffalo</span> Specifications
+              <span className="gold-text">Gold Kangaroo</span> Specifications
             </h1>
             <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-              Technical details and investor-facing facts for the 1 oz American Gold Buffalo, America&apos;s purest gold bullion coin.
+              Technical details and investor-facing facts for the 1 oz Australian Kangaroo Gold coin, one of the world&apos;s most recognized gold bullion coins.
             </p>
           </div>
 
@@ -155,7 +155,7 @@ export default function CoinSpecsPage() {
               The .9999 Purity Advantage
             </h2>
             <p className="text-gray-300 leading-relaxed mb-4">
-              At .9999 fineness (24-karat), the Gold Buffalo is the purest gold coin produced by the U.S. Mint.
+              At .9999 fineness (24-karat), the Gold Kangaroo matches the highest purity standard for gold bullion coins worldwide.
             </p>
             <ul className="space-y-3 text-gray-300">
               <li className="flex items-start gap-3">
@@ -176,9 +176,9 @@ export default function CoinSpecsPage() {
               </li>
             </ul>
             <p className="text-gray-400 text-sm mt-4">
-              Learn more about purity and composition at{" "}
+              Learn more about the Gold Kangaroo at{" "}
               <a
-                href="https://www.monex.com/knowledge/composition-purity-1-oz-gold-buffalo-coins/"
+                href="https://www.monex.com/gold-australian-kangaroo-nugget/"
                 target="_blank"
                 rel="nofollow noopener noreferrer"
                 className="text-bullion-gold hover:underline"
@@ -194,19 +194,19 @@ export default function CoinSpecsPage() {
               Legal Tender Status
             </h2>
             <p className="text-gray-300 leading-relaxed mb-4">
-              The American Gold Buffalo carries a <strong className="text-white">$50 face value</strong> and is official United States legal tender. This government backing provides:
+              The Australian Kangaroo Gold coin carries a <strong className="text-white">$100 AUD face value</strong> and is official Australian legal tender. This government backing provides:
             </p>
             <div className="grid md:grid-cols-2 gap-4">
               <div className="bg-white/5 rounded-lg p-4">
                 <h3 className="text-bullion-gold font-semibold mb-2">Authenticity Assurance</h3>
                 <p className="text-gray-400 text-sm">
-                  Produced by the U.S. Mint with strict quality controls and anti-counterfeiting measures.
+                  Produced by the Perth Mint with strict quality controls and anti-counterfeiting measures.
                 </p>
               </div>
               <div className="bg-white/5 rounded-lg p-4">
                 <h3 className="text-bullion-gold font-semibold mb-2">Government Guarantee</h3>
                 <p className="text-gray-400 text-sm">
-                  Weight and purity backed by the full faith of the United States government.
+                  Weight and purity backed by the Australian government.
                 </p>
               </div>
               <div className="bg-white/5 rounded-lg p-4">
@@ -230,7 +230,7 @@ export default function CoinSpecsPage() {
               IRA Eligibility Considerations
             </h2>
             <p className="text-gray-300 leading-relaxed mb-4">
-              American Gold Buffalo coins qualify for inclusion in a Precious Metals IRA (Self-Directed IRA). Key considerations:
+              Australian Kangaroo Gold coins qualify for inclusion in a Precious Metals IRA (Self-Directed IRA). Key considerations:
             </p>
             <ul className="space-y-3 text-gray-300 mb-4">
               <li className="flex items-start gap-3">
@@ -239,7 +239,7 @@ export default function CoinSpecsPage() {
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-emerald-400">✓</span>
-                <span>Produced by an approved national mint (U.S. Mint)</span>
+                <span>Produced by an approved national mint (Perth Mint)</span>
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-emerald-400">✓</span>
@@ -263,13 +263,13 @@ export default function CoinSpecsPage() {
               Understanding Premium Drivers
             </h2>
             <p className="text-gray-300 leading-relaxed mb-4">
-              Gold Buffalo coins trade at a premium above the spot price of gold. Factors that influence premiums include:
+              Gold Kangaroo coins trade at a premium above the spot price of gold. Factors that influence premiums include:
             </p>
             <div className="space-y-4">
               <div className="border-l-2 border-bullion-gold/50 pl-4">
                 <h3 className="text-white font-semibold">Minting Costs</h3>
                 <p className="text-gray-400 text-sm">
-                  U.S. Mint production, quality control, and distribution expenses.
+                  Perth Mint production, quality control, and distribution expenses.
                 </p>
               </div>
               <div className="border-l-2 border-bullion-gold/50 pl-4">
@@ -281,7 +281,7 @@ export default function CoinSpecsPage() {
               <div className="border-l-2 border-bullion-gold/50 pl-4">
                 <h3 className="text-white font-semibold">Supply & Demand</h3>
                 <p className="text-gray-400 text-sm">
-                  Mint production capacity versus investor demand for physical gold.
+                  Perth Mint production capacity versus investor demand for physical gold.
                 </p>
               </div>
               <div className="border-l-2 border-bullion-gold/50 pl-4">
@@ -293,14 +293,14 @@ export default function CoinSpecsPage() {
               <div className="border-l-2 border-bullion-gold/50 pl-4">
                 <h3 className="text-white font-semibold">Product Recognition</h3>
                 <p className="text-gray-400 text-sm">
-                  The Buffalo&apos;s government backing and global recognition support competitive spreads.
+                  The Kangaroo&apos;s government backing and global recognition support competitive spreads.
                 </p>
               </div>
             </div>
             <p className="text-gray-400 text-sm mt-4">
-              View current Gold Buffalo pricing at{" "}
+              View current Gold Kangaroo pricing at{" "}
               <a
-                href="https://www.monex.com/gold-american-buffalo-price-charts/"
+                href="https://www.monex.com/gold-australian-kangaroo-nugget-price-charts/"
                 target="_blank"
                 rel="nofollow noopener noreferrer"
                 className="text-bullion-gold hover:underline"
@@ -348,4 +348,3 @@ export default function CoinSpecsPage() {
     </>
   );
 }
-

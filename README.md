@@ -1,18 +1,18 @@
-# AmericanBuffaloGoldCoin.com
+# AustralianKangarooGoldCoin.com
 
-An educational microsite about 1 oz American Gold Buffalo coins built with Next.js 15, TypeScript, and Tailwind CSS.
+An educational microsite about 1 oz Australian Kangaroo Gold coins built with Next.js 15, TypeScript, and Tailwind CSS.
 
 ## Features
 
-- **Home Page**: Comprehensive overview of American Gold Buffalo coins, including benefits, who buys them, key specifications, and coin comparisons
-- **Gold Prices Page**: Live gold pricing with AB (American Buffalo) and GBXSPOT data, plus educational content about premiums
+- **Home Page**: Comprehensive overview of Australian Kangaroo Gold coins, including benefits, who buys them, key specifications, and coin comparisons
+- **Gold Prices Page**: Live gold pricing with NG (Australian Kangaroo) and GBXSPOT data, plus educational content about premiums
 - **Coin Specs Page**: Technical specifications, purity details, IRA eligibility, and premium drivers with FAQ
-- **Design & History Page**: James Earle Fraser's design origins, obverse/reverse themes, and cultural backdrop
-- **Resources**: 12 in-depth educational articles covering:
-  - Understanding Gold Buffalo Premiums
-  - Coin Comparison (Buffalo vs Eagle vs Maple Leaf)
+- **Design & History Page**: Perth Mint heritage, Dr. Stuart Devlin's original design, obverse/reverse themes, and design evolution
+- **Resources**: Educational articles covering:
+  - Understanding Gold Kangaroo Premiums
+  - Coin Comparison (Kangaroo vs Eagle vs Maple Leaf)
   - Storage Options for Gold Coins
-  - Mint & Design Differences
+  - Purity and Composition
   - Liquidity Considerations
   - Market Dynamics
   - Bid-Ask Spreads
@@ -71,11 +71,11 @@ src/
 ├── components/
 │   ├── Header.tsx
 │   ├── Footer.tsx
-│   ├── LiveGoldSpotCard.tsx        # American Buffalo price card
+│   ├── LiveGoldSpotCard.tsx        # Australian Kangaroo price card
 │   ├── LiveGoldSpotIndexCard.tsx  # Gold spot index card
 │   └── MonexWidgets.tsx
 ├── lib/
-│   ├── siteConfig.ts       # ⭐ SINGLE SOURCE OF TRUTH
+│   ├── siteConfig.ts       # Single source of truth for site config
 │   └── monexSpot.ts        # Pricing API utilities
 └── data/
     ├── resources.ts        # Resource metadata
@@ -87,12 +87,8 @@ src/
 
 This site uses the Monex API for pricing data:
 
-- **Product Symbol**: AB (American Gold Buffalo)
+- **Product Symbol**: NG (Australian Gold Kangaroo)
 - **Spot Symbol**: GBXSPOT (Gold spot index)
-
-API endpoints:
-- `https://api.monex.com/api/v2/Metals/spot/summary?metals=AB`
-- `https://api.monex.com/api/v2/Metals/spot/summary?metals=GBXSPOT`
 
 Prices are fetched once per page load (no polling/intervals).
 
